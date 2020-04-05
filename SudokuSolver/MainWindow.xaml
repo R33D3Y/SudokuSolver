@@ -3,10 +3,181 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SudokuSolver"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Sudoku Solver" Height="490" Width="420" ResizeMode="NoResize">
+    
     <Grid>
-        
+        <WrapPanel x:Name="wrapPanel" HorizontalAlignment="Left" Height="376" Margin="20,20,0,0" VerticalAlignment="Top" Width="376">
+            <TextBox x:Name="A0" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="B0" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="C0" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <Rectangle Fill="#FFF4F4F5" Height="40" Stroke="Black" Width="5"/>
+
+            <TextBox x:Name="D0" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="E0" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="F0" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <Rectangle Fill="#FFF4F4F5" Height="40" Stroke="Black" Width="5"/>
+
+            <TextBox x:Name="G0" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="H0" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="I0" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <TextBox x:Name="A1" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="B1" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="C1" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <Rectangle Fill="#FFF4F4F5" Height="40" Stroke="Black" Width="5"/>
+
+            <TextBox x:Name="D1" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="E1" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="F1" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <Rectangle Fill="#FFF4F4F5" Height="40" Stroke="Black" Width="5"/>
+
+            <TextBox x:Name="G1" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="H1" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="I1" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <TextBox x:Name="A2" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="B2" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="C2" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <Rectangle Fill="#FFF4F4F5" Height="40" Stroke="Black" Width="5"/>
+
+            <TextBox x:Name="D2" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="E2" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="F2" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <Rectangle Fill="#FFF4F4F5" Height="40" Stroke="Black" Width="5"/>
+
+            <TextBox x:Name="G2" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="H2" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="I2" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="40"/>
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="40"/>
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="40"/>
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="5"/>
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="40"/>
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="40"/>
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="40"/>
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="5"/>
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="40"/>
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="40"/>
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="40"/>
+
+            <TextBox x:Name="A3" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="B3" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="C3" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <Rectangle Fill="#FFF4F4F5" Height="40" Stroke="Black" Width="5"/>
+
+            <TextBox x:Name="D3" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="E3" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="F3" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <Rectangle Fill="#FFF4F4F5" Height="40" Stroke="Black" Width="5"/>
+
+            <TextBox x:Name="G3" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="H3" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="I3" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <TextBox x:Name="A4" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="B4" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="C4" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <Rectangle Fill="#FFF4F4F5" Height="40" Stroke="Black" Width="5"/>
+
+            <TextBox x:Name="D4" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="E4" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="F4" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <Rectangle Fill="#FFF4F4F5" Height="40" Stroke="Black" Width="5"/>
+
+            <TextBox x:Name="G4" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="H4" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="I4" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <TextBox x:Name="A5" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="B5" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="C5" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <Rectangle Fill="#FFF4F4F5" Height="40" Stroke="Black" Width="5"/>
+
+            <TextBox x:Name="D5" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="E5" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="F5" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <Rectangle Fill="#FFF4F4F5" Height="40" Stroke="Black" Width="5"/>
+
+            <TextBox x:Name="G5" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="H5" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="I5" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="40"/>
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="40"/>
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="40"/>
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="5"/>
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="40"/>
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="40"/>
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="40"/>
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="5"/>
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="40"/>
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="40"/>
+            <Rectangle Fill="#FFF4F4F5" Height="5" Stroke="Black" Width="40"/>
+
+            <TextBox x:Name="A6" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="B6" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="C6" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <Rectangle Fill="#FFF4F4F5" Height="40" Stroke="Black" Width="5"/>
+
+            <TextBox x:Name="D6" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="E6" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="F6" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <Rectangle Fill="#FFF4F4F5" Height="40" Stroke="Black" Width="5"/>
+
+            <TextBox x:Name="G6" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="H6" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="I6" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <TextBox x:Name="A7" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="B7" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="C7" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <Rectangle Fill="#FFF4F4F5" Height="40" Stroke="Black" Width="5"/>
+
+            <TextBox x:Name="D7" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="E7" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="F7" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <Rectangle Fill="#FFF4F4F5" Height="40" Stroke="Black" Width="5"/>
+
+            <TextBox x:Name="G7" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="H7" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="I7" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <TextBox x:Name="A8" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="B8" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="C8" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <Rectangle Fill="#FFF4F4F5" Height="40" Stroke="Black" Width="5"/>
+
+            <TextBox x:Name="D8" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="E8" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="F8" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <Rectangle Fill="#FFF4F4F5" Height="40" Stroke="Black" Width="5"/>
+
+            <TextBox x:Name="G8" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="H8" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="I8" HorizontalAlignment="Left" Height="40" TextWrapping="NoWrap" VerticalAlignment="Top" Width="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        </WrapPanel>
+
+        <Button x:Name="ButtonCheck" Content="Check" HorizontalAlignment="Left" Margin="20,401,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="ButtonCheck_Click"/>
+        <Button x:Name="ButtonSolve" Content="Solve" HorizontalAlignment="Left" Margin="270,401,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="ButtonSolve_Click"/>
     </Grid>
 </Window>
